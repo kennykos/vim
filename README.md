@@ -1,5 +1,5 @@
 # vim
-Personal vim configuration
+Personal vim configuration. Inspired by this [vim/latex setup guide](https://web.ma.utexas.edu/users/vandyke/notes/getting_started_latex_vim/getting_started.pdf)
 
 ## Setup
-To activate the vimrc file in this directiory, create a hard link to `$HOME/.vimrc` (on linux run `ln vimrc ~/.vimrc`, and make sure to make a backup (`mv ~/.vimrc ~/.vimrc_old`) if the `.vimrc` file already exists).
+After cloning this repository, move the file to ~/.vim/ (i.e. `mv . ~/.vim)
