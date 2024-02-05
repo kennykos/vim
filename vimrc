@@ -56,10 +56,25 @@ endif
 """"""""""""""""""""""""""""""""" DEFAULT `vimrc` FILE """""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""" MY ADDITIONS """""""""""""""""""""""""""""""""""""""""""
-"pathogen package manager
+""""pathogen package manager"""
 execute pathogen#infect()
 
 "enable spell check (type `zg/zug'over selected work to add/remove from
 "dictionary, type `z=' to see suggested words
 set spell
 set spelllang=en_us
+
+"""VIMTEX"""
+"This is necessary for VimTeX to load properly
+filetype plugin indent on
+
+"""pattern search set to incremental search that highlights all matches"""
+set is hls
+
+"""ultisnips"""
+let g:UltiSnipsExpandTrigger       = '<Tab>'    " use Tab to expand snippets
+let g:UltiSnipsJumpForwardTrigger  = '<Tab>'    " use Tab to move forward through tabstops
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'  " use Shift-Tab to move backward through tabstops
+let g:UltiSnipsSnippetDirectories=[$HOME."/.vim/UltiSnips"] " add UltiSnips to vim runtime path 
+
+
