@@ -77,4 +77,6 @@ let g:UltiSnipsJumpForwardTrigger  = '<Tab>'    " use Tab to move forward throug
 let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'  " use Shift-Tab to move backward through tabstops
 let g:UltiSnipsSnippetDirectories=[$HOME."/.vim/UltiSnips"] " add UltiSnips to vim runtime path 
 
-
+" Add Julia filetype detection if it's not working automatically
+au BufRead,BufNewFile *.jl set filetype=julia
+runtime macros/matchit.vim
