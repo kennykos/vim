@@ -80,3 +80,6 @@ let g:UltiSnipsSnippetDirectories=[$HOME."/.vim/UltiSnips"] " add UltiSnips to v
 " Add Julia filetype detection if it's not working automatically
 au BufRead,BufNewFile *.jl set filetype=julia
 runtime macros/matchit.vim
+
+"YAML indentation"
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
